@@ -46,5 +46,70 @@ if a>b:
     print("lesser than other ")
 else:  
     print("not equal")
+#5
+numb = 36
+sqrt_num = numb ** 0.5
+print("The Square Root of the Given Number is",sqrt_num)
+
+#6
+amount = 30000
+roi = 10
+time = 2
+ask=30
+ask == "simple interest"
+numer = amount * roi * time
+denom = 100
+result = numer / denom
+print("The Simple Interest is:",result)
+ask == "compound interest"
+result = ( amount*((1 + (roi/100))**time) - amount )
+print("The Compound Interest is:",result)
+print("Invalid Operation!!")
+
+#7
+    
+x = 10
+y = 20
+opr = input("enter the operation:")
+opr == "+"
+x+=y
+print(x)
+x-=y
+print(x)
+x*=y
+print(x)
+x/=y
+print(x)
+x%=y
+print(x)
+x**=y
+print(x)
+ #8
+a=15
+b=20
+a=a+b
+b=a-b
+a=a-b
+print("a=",a)
+print("b=",b)
+
+#9
+numb = 8
+cube_root = (numb ** (1/3))
+print(cube_root)
+
+#10
+numb = 8523
+last_two_digit= numb % 100
+print(last_two_digit)
+
+#11
+num=8523
+remove_two_digit = num//100
+print(remove_two_digit)
+
+
+
+
 
 
