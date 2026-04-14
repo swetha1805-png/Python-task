@@ -1,0 +1,118 @@
+#if else question
+
+#1
+num = int(input("Enter The Number: "))
+if num%2 == 0:
+    print("Even")
+else:
+    print("Odd")
+
+#2
+age = int(input("Enter  your Age: "))
+if age >= 18:
+    print(" eligible to Vote")
+else:
+    print(" not eligible to Vote")
+
+#3
+mark = int(input("Enter Marks:"))
+ 
+if mark >= 40:
+    print("You have passed in the Exam")
+else:
+    print("You have failed in the Exam")
+
+
+#4
+
+num = int(input("Enter Number: "))
+if num >= 0:
+    print("The Number is Positive")
+else:
+    print("The Number is Negative")
+
+#elif question
+
+#5
+mark = int(input("Enter Your Marks: "))
+if mark > 90:
+    print("Your Grade is 'A'")
+elif mark >=75 and mark <= 89:
+    print("Your Grade is 'B'")
+elif mark >=50 and mark <= 74:
+    print("Your Grade is 'c'")
+else:
+    print("Fail")
+
+#6
+a = int(input("Enter First Number: "))
+b = int(input("Enter Second Number: "))
+c = int(input("Enter Third Number; "))
+lst = [a,b,c]
+print(max(lst))
+
+#7
+num = int(input("Enter Number (1-7): "))
+if num == 1:
+    print("Sunday")
+elif num == 2:
+    print("Monday")
+elif num == 3:
+    print("Tuesday")
+elif num == 4:
+    print("Wednesday")
+elif num == 5:
+    print("Thursday")
+elif num == 6:
+    print("Friday")
+elif num == 7:
+    print("Saturday")
+else:
+    print("Invalid Number")
+
+#8
+    
+a = int(input("Enter First Number: "))
+b = int(input("Enter Second Number: "))
+op = str(input("Enter the arithmetic operation: "))
+if op == "+":
+    print(a+b)
+elif op == "-":
+    print(a-b)
+elif op == "*":
+    print(a*b)
+elif op == "/":
+    print(a/b)
+elif op == "//":
+    print(a//b)
+elif op == "%":
+    print(a%b)
+else:
+    print("Invalid Arithmetic Operation!!")
+
+#9
+username = "Swetha"
+password = "Swetha1805"
+usr = str(input("Enter Username: "))
+passwd = str(input("Enter Password: "))
+if usr == username:
+ if passwd == password:
+    print("Login Success")
+ else:
+    print("incorrect Password")
+else:
+    print("Invalid Username")
+
+#10
+
+signal = str(input("Enter Signal Color: "))
+if signal == "red":
+    print("Stop")
+elif signal == "yellow":
+    print("Get Ready")
+elif signal == "green":
+    print("Go")
+else:
+    print("Error: Invalid Signal!!")
+
+
