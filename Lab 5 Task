@@ -1,0 +1,60 @@
+#1
+
+txt="swetha"
+print(txt.upper())
+
+#2
+
+txt="GUIDO VAN ROSSUM IS THE FATHER OF PYTHON"
+print(txt.casefold())
+
+#3
+
+txt="python is an programming language"
+print(txt.capitalize())
+
+#4
+Name="Swetha"
+Age="17"
+print(f'My name is {Name} and I am {Age} years old')
+
+#5
+txt= "python"
+print(txt.index("h"))
+
+#6
+txt="programming language"
+print(txt.find("m"))
+
+#7
+txt="pythontask"
+print(txt.endswith('ing'))
+
+#8
+txt= "s\tw\te\tt\th\ta"
+print(txt.expandtabs(4))
+
+#9
+txt="python"
+print(txt.encode("UTF-8"))
+
+#10
+num="9876"
+print(num.isdigit())
+
+#11
+num="1805"
+print(num.isnumeric())
+
+#12
+txt="swetha1805"
+print(txt.isalnum())
+
+#13
+txt="python123"
+print(txt.isascii())
+
+#14
+txt="language"
+print(txt.isalpha())
+
