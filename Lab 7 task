@@ -1,0 +1,87 @@
+#part 1:Dictionary Task
+student={"name":"John",
+         "age":20,
+         "course":"python"}
+
+#1 get
+print("Name:",student.get("name"))
+
+#2 key
+print("Keys:",student.keys())
+
+#3 value
+print("Values:",student.values())
+
+#4 items
+print("Items:",student.items())
+
+#5 update
+student.update({"marks":85})
+print("Marks",student)
+
+#6 pop
+student.pop("course")
+print("course:",student)
+
+#7 popitem
+student.popitem()
+print("after removing popitem():",student)
+
+#8 copy
+student_copy=student.copy()
+print("copied dictionary:",student_copy)
+
+#9 clear
+student.clear()
+print("after_clear():",student)
+
+#Part 2: set Task
+A={1,2,3,4}
+B={3,4,5,6}
+#1 add
+A.add(7)
+print(A)
+
+#2 remove
+A.remove(2)
+print(A)
+
+#3 discard
+A.discard(10)
+print(A)
+
+#4 union
+print(A. union(B))
+
+#5 intersection
+print(A&B)
+
+#6 difference
+print(A-B)
+
+#7 update difference
+A.difference_update(B)
+print("differnce update:",A)
+
+#8 subset
+print(A.issubset(B))
+
+#9 superset
+print(A.issuperset(B))
+
+#10 disjoint
+print(A.isdisjoint(B))
+
+#11 pop
+A.pop()
+print(A)
+
+#12 copy
+A.copy()
+print("c:",A)
+
+#13 Clear
+B.clear()
+print(B)
+
+
