@@ -1,0 +1,85 @@
+#1 math
+import math
+n=int(input("enter a value:"))
+print(math.sqrt(n))
+
+n=int(input("enter a value:"))
+print(math.pow(n,4))
+
+print(math.pi)
+
+a=float(input("enter a value:"))
+print(math.ceil(a))
+print(math.floor(a))
+
+b=int(input("enter a value:"))
+print(math.factorial(b))
+
+
+#3 time module
+import time
+print(time.ctime())
+
+time.sleep(3)
+
+print(time.ctime())
+
+print(time.strftime("%H-%M-%S"))
+
+#4 datetime module
+
+import datetime as dt
+
+print(dt.datetime.now())
+
+d=dt.datetime.now()
+
+print(d.date())
+
+print(d.year)
+
+print(d.month)
+
+print(d.day)
+
+#5 calender
+
+import calendar as ca
+print(ca.month(2026,5))
+
+a=int(input("enter a value:"))
+print(ca.calendar(a))
+
+print(ca.isleap(a))
+
+print(ca.monthrange(2026,5))
+
+print(ca.weekday(2026,5,13))
+
+#6 random module
+
+import random as r
+print(r.randint(1,10))
+
+print(r.randint(1,100))
+
+a=[1,23,73,94,35]
+print(r.choice(a))
+
+print(r.uniform(1,90.2))
+
+r.shuffle(a)
+print(a)
+
+#7 pywhatkit
+
+import pywhatkit as pt
+pt.search("python")
+
+pt.playonyt("pandas module")
+
+pt.playonyt("father songs")
+
+pt.sendwhatmsg("+919342613500","Hello ",17,58)
+
+pt.info("python",lines=3)
