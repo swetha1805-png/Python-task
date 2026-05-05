@@ -1,0 +1,172 @@
+#LAMBDA TASKS
+
+#1 [MAXIMUM OF THREE NUMBERS]
+a=int(input("enter the number="))
+b=int(input("enter the number="))
+c=int(input("enter the number="))
+data=lambda a,b,c:max(a,b,c)
+print("Maximum number is:",data(a,b,c))
+
+
+#2 [EVEN OR ODD]
+n=int(input("enter the number="))
+number=lambda x:"Even" if x % 2 == 0 else "odd"
+print(number(n))
+
+#3 [DIVISIBLE]
+n= int(input("enter the number="))
+divisible=lambda a: "Divisible by 5" if a%5 ==0 else"Not divisible"
+print(divisible(n))
+
+#4 [SQUARE + CUBE]
+n= int(input("enter the numbers="))
+square_cube=lambda x:(x**2, x**3)
+print("Square and Cube:",square_cube(n))
+
+#5[LAST DIGIT]
+n=int(input("enter the numbers="))
+value = lambda x:x%10
+print("Last digit:",value(n))
+
+#6 [POSITIVE AND NEGATIVE]
+n=int(input("enter the numbers="))
+value = lambda x:"Positive" if x>=0 else "Negative"
+print(value(n))
+
+#7 [PASS AND FAIL]
+marks=int(input("enter marks="))
+result = lambda x:"Pass" if x>=40 else "fail"
+print(result(marks))
+
+#8 [MULTIPLE THREE NUMBERS
+a=int(input("enter the number="))
+b=int(input("enter the number="))
+c=int(input("enter the number="))
+multiple=lambda a,b,c:a*b*c
+print("multiple three numbers:",multiple(a,b,c))
+
+#9 [STRING LENGTH]
+a=(input("enter the string="))
+str = lambda x:len(x)
+print("length:",str (a))
+
+#10 [CELSIUS AND FAHRENHEIT]
+c = float(input("Enter temperature in Celsius: "))
+d= lambda c: (c * 9/5) + 32
+print("Fahrenheit:", d(c))
+
+# MAPPING
+
+# 1 [SQUARE]
+nums = [1, 2, 3]
+square=list(map(lambda x: x**2, nums))
+print(square)
+      
+# 2 [DOUBLE]
+nums = [2, 4, 6]
+double=(list(map(lambda x: x*2, nums)))
+print(double)
+      
+# 3 [ADD 1]
+nums = [5, 6, 7]
+add=(list(map(lambda x: x+1, nums)))
+print(add)
+      
+# 4 [CONVERT TO STRING]
+nums = [1, 2, 3]
+s=list(map(lambda x: str(x), nums))
+print(s)
+      
+# 5 [CUBE]
+nums = [1, 2, 3]
+cube=(list(map(lambda x: x**3, nums)))
+print(cube)
+      
+# 6 [UPPERCASE]
+chars = ["a", "b", "c"]
+up=(list(map(lambda x: x.upper(), chars)))
+print(up)
+      
+# 7 [STRING LENGTH]
+words = ["hi", "hello", "bye"]
+string=(list(map(lambda x: len(x), words)))
+print(string)
+      
+# 8 [ADD TWO LIST]
+a = [1, 2, 3]
+b = [4, 5, 6]
+List=(list(map(lambda x, y: x + y, a, b)))
+print(List)
+      
+# 9 [MULTIPLE BY 3]
+nums = [1, 2, 3]
+mult=(list(map(lambda x: x*3, nums)))
+print(mult)
+      
+# 10 [SUBTRACT  2]
+nums = [5, 6, 7]
+sub=(list(map(lambda x: x-2, nums)))
+print(sub)
+
+#FILTERING
+
+# 1 [EVEN NUMBERS]
+nums = [1, 2, 3, 4, 5]                     
+even = list(filter(lambda x: x % 2 == 0, nums))   
+print("EVEN:", even)                     
+
+
+# 2 [ODD NUMBERS]
+nums = [1, 2, 3, 4, 5]
+odd = list(filter(lambda x: x % 2 != 0, nums))
+print("ODD:", odd)
+
+
+# 3 [GREATER THAN 5]
+nums = [2, 6, 8, 1]
+value = list(filter(lambda x: x > 5, nums))
+print("GREATER THAN 5:",value)
+
+
+# 4 [LESS THAN 10]
+nums = [5, 12, 7, 20]
+less = list(filter(lambda x: x < 10, nums))
+print("LESS THAN 10:", less)
+
+
+# 5 [POSITIVE NUMBERS]
+nums = [1, -2, 3, -4]
+positive = list(filter(lambda x: x > 0, nums))
+print("POSITIVE:", positive)
+
+
+# 6 [NEGATIVE NUMBERS]
+nums = [1, -2, 3, -4]
+negative = list(filter(lambda x: x < 0, nums))
+print("NEGATIVE:", negative)
+
+
+# 7 [DIVISIBLE BY 3]
+nums = [3, 5, 9, 10]
+div = list(filter(lambda x: x % 3 == 0, nums))
+print("DIVISIBLE BY 3:", div)
+
+
+# 8 [DIVISIBLE BY 5]
+nums = [10, 12, 15, 7]
+div5 = list(filter(lambda x: x % 5 == 0, nums))
+print("DIVISIBLE BY 5:", div5)
+
+
+# 9 [BETWEEN 1 AND 10]
+nums = [0, 5, 12, 8]
+b = list(filter(lambda x: 1 < x < 10, nums))
+print("BETWEEN 1 AND 10:", b)
+
+
+# 10 [EQUAL TO 7]
+nums = [7, 2, 7, 4]
+equal = list(filter(lambda x: x == 7, nums))
+print("EQUAL TO 7:", equal)
+
+
